@@ -1,7 +1,7 @@
 #! /usr/bin/python
-# -*- coding: utf-8 -*-
+# -*- coding:utf-8 -*-
 # Author: Joker
-# Copyright (c) 2018 OpenString. All rights reserved.
+# Copyright (c) 2019 minsx.com All rights reserved.
 import codecs
 import os
 import shutil

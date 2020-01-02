@@ -1,7 +1,7 @@
 #! /usr/bin/python
 # -*- coding:utf-8 -*-
 # Author: Joker
-# Copyright (c) 2018 OpenString. All rights reserved.
+# Copyright (c) 2019 minsx.com All rights reserved.
 import os
 import time
 from threading import Thread
@@ -12,9 +12,9 @@ import psutil
 import logging
 import webbrowser
 import subprocess
-from com.minsx.pycontainer .Logger import Logger
+from com.minsx.pycontainer.Logger import Logger
 from com.minsx.util import Email
-from com.minsx.pycontainer  import ConfigManager, DataManager
+from com.minsx.pycontainer import ConfigManager, DataManager
 
 APP_SERVER_PID_LIST = {}
 config = ConfigManager.getSoftConfig()

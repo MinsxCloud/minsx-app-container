@@ -1,20 +1,20 @@
 #! /usr/bin/python
 # -*- coding:utf-8 -*-
 # Author: Joker
-# Copyright (c) 2018 OpenString. All rights reserved.
-# import winreg
+# Copyright (c) 2019 minsx.com All rights reserved.
 import subprocess
 
 
 def existKey(key):
-    # reg = winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, r"SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Run")
-    # try:
-    #     winreg.QueryValueEx(reg, key)
-    #     return True
-    # except WindowsError as e:
-    #     pass
-    # finally:
-    #     winreg.CloseKey(reg)
+    import winreg
+    reg = winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, r"SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Run")
+    try:
+        winreg.QueryValueEx(reg, key)
+        return True
+    except WindowsError as e:
+        pass
+    finally:
+        winreg.CloseKey(reg)
     return False
 
 
