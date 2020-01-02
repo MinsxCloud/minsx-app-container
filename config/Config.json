@@ -1,0 +1,41 @@
+{
+  "ContainerName": "米斯云容器",
+  "ContainerLogo": "ContainerLogo.ico",
+  "EnableOpenWebMenu": false,
+  "EnableGetHelpMenu": true,
+  "EnableBootStartSetMenu": true,
+  "WebAddress": "https://www.minsx.com/",
+  "GetHelpMenuName": "获取帮助",
+  "OpenWebMenuName": "显示程序",
+  "BootStartSetMenuName": "开机启动设置",
+  "ExitMenuName": "退出管理器",
+  "ContainerSeverList": {
+  },
+  "MonitorAdvice": {
+    "Enable": false,
+    "MonitorFrequencySeconds": 10,
+    "SendEmailIntervalSeconds": 30
+  },
+  "Email": {
+    "Enable": false,
+    "ServerName": "",
+    "EmailUser": "",
+    "EmailPass": "",
+    "EmailHost": "",
+    "ReceivedEmail": [
+      ""
+    ]
+  },
+  "AppServerList": {
+    "米斯云文件同步系统": {
+      "StartWithContainer": false,
+      "SingleMode": true,
+      "EnableShowAppMenu": true,
+      "ShowAppServer": "OpenWeb:https://www.baidu.com/",
+      "Servers": {
+        "MainServer": "E:/Temp/PyContainerTest/start.cmd",
+        "PingServer": "E:/Temp/PyContainerTest/ping.cmd"
+      }
+    }
+  }
+}
